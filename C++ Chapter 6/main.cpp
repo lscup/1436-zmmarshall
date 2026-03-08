@@ -10,28 +10,45 @@ using namespace std;
 int main() {
     // this is the beginning 
     bool isDead = false ; 
-    int payCheck = 0 , name ;
+    int payCheck = 0 , name, end ;
     
     char choice ;
         //night1; ( did not work in beginning will try later )
         while (isDead == false)
             {
                 
-                cout << "Do you need a job? <y/n> " << '\n'; 
+                cout << "Do you need a job? <y/n> " ; 
                 cin >> choice;
                 if (choice == 'y' || choice == 'Y')
                     {
                         cout << "hello there would you like to work at this abandoned facility ? ";
+
+                        break;
+
                     }
+
                 else if (choice == 'n' || choice == 'N')
                     {
+                        
+                       
                         cout << " Have a great day ";
-                        break ;
+                        goto end;
+
                     }
+
                 else
                     {
-                        cout >> "error we can't process:">>   
+
+                        cout << "error we can't process:" << choice << "\n";
+                        continue; 
+
                     }
+                cout << " hello there"<<
+                
+
+
+
+
 
 
 
@@ -39,6 +56,7 @@ int main() {
                 
                 
             }
+        end: 
 
 
 }
